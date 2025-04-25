@@ -25,3 +25,6 @@ for(let i = 0; i < lista.length; i++){
 
     listaNoBody[0].appendChild(liFor);
 }
+
+let elementoClasse = document.querySelector('.destaque')
+let elementoId = document.querySelector('#unico')
