@@ -1,0 +1,37 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+#slide {
+    width: 640px;
+    height: 428px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 8px #000;
+    position: relative; /* a "caixa" sempre é relative */
+}
+
+#slide img {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#slide img.active {
+    opacity: 1;
+}
+
+#slide p {
+    z-index: 2;
+    position: absolute; /* top, right, bottom, left */
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
